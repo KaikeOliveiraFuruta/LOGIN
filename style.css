@@ -1,11 +1,11 @@
 body{
     background-color: var(--background-1);
     color: var(--txt-1);
-    transition: 0.2s;
 }
 *{
     font-family: 'Poppins', sans-serif;
     font-smooth: auto;
+    transition: 0.2s;
 }
 :root{
     --background-1: #FFFFFF;
@@ -19,6 +19,7 @@ body{
     --txt-1: #080808;
     --txt-2: #FFFFFF;
     --txt-3: #a1a1a1;
+    --txt-4: #080808;
 }
 .dark-mode{
     --background-1: #363149;
@@ -32,18 +33,16 @@ body{
     --txt-1: #FFFFFF;
     --txt-2: #201A30;
     --txt-3: #a1a1a1;
+    --txt-4: #FFFFFF;
 }
 ::selection{
     color: var(--txt-2);
     background-color: var(--background-3);
 }
-input{
-    caret-color: var(--background-8);
-}
 .box-screen{
     background-color: var(--background-7);
     box-shadow: 0px 16px 40px var(--background-2);
-    width: 320px;
+    width: 300px;
     height: 620px;
     border-radius: 8px;
     position: absolute;
@@ -51,19 +50,16 @@ input{
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    transition: 0.2s;
 }
 h1{
     color: var(--txt-1);
     font-size: 36px;
     margin: 36px 0px 0px 0px;
-    transition: 0.2s;
 }
 p{
     color: var(--txt-3);
     font-size: 12px;
     margin: 0px;
-    transition: 0.2s;
 }
 img{
     user-select: none;
@@ -80,6 +76,7 @@ img{
     float: left;
 }
 .input-txt{
+    color: var(--txt-4);
     background-color: var(--background-5);
     width: 205px;
     height: 25px;
@@ -87,7 +84,6 @@ img{
     padding: 10px 0px 10px 45px;
     border-radius: 8px;
     border: none;
-    transition: 0.2s;
 }
 .input-txt::placeholder{
     color: var(--txt-3);
@@ -101,7 +97,6 @@ img{
     margin: 12px 225px 10px 15px;
     float: left;
     position: absolute;
-    transition: 0.2s;
 }
 .span-checkbox{
     color: var(--txt-1);
@@ -109,7 +104,6 @@ img{
     margin: 18px 0px 0px 0px;
     float: left;
     user-select: none;
-    transition: 0.2s;
 }
 .span-checkbox:hover{
     cursor: pointer;
@@ -141,6 +135,11 @@ img{
 }
 .button-sign-in:hover{
     background-color: var(--background-4);
+    cursor: pointer;
+}
+.button-sign-in:active{
+    background-color: var(--background-4);
+    transform: scale(0.98);
     cursor: pointer;
 }
 .button-options{
@@ -191,6 +190,7 @@ img{
     height: 30px;
     margin: 0px 25px 0px 0px;
     float: right;
+    transition: 0.1s;
 }
 .img-colors:hover{
     fill: var(--background-4);
